@@ -65,7 +65,7 @@ void keyboard(unsigned char key, int x, int y) {
 }
 
 void mouse(int button, int state, int x, int y) {
-    //Restart when button press is released and when no balls are on screen, thus we wait for a left button state change to the up state.
+    //Restart when button press is released and at least one ball has left the screen, thus we wait for a left button state change to the up state.
     if (button == GLUT_LEFT && state == GLUT_UP) {
         if (ball1.is_fully_outside(-1.0f, 1.0f, -1.0f, 1.0f) ||
             ball2.is_fully_outside(-1.0f, 1.0f, -1.0f, 1.0f) ||
