@@ -3,5 +3,5 @@ GLUTSprong is a Pong-style game to test a way of doing 2D collissions. The under
 
 ![Game image.](https://raw.githubusercontent.com/mlaang/GLUTSprong/master/Output.png)
 
-## Compiling
+# Compiling
 You will need to install GLUT and OpenGL and to link them.  
